@@ -1,12 +1,11 @@
-/*
-  Modbus-Arduino Example - Servo (Modbus IP ENC28J60)
+/**
+  @file Servo.ino
+  Modbus-Arduino Example - Servo (Modbus TCP using Ethercard ENC28J60)
   Copyright by André Sarmento Barbosa
   http://github.com/andresarmento/modbus-arduino
 */
 
-#include <EtherCard.h>
-#include <Modbus.h>
-#include <ModbusIP_ENC28J60.h>
+#include <ModbusEthercard.h>
 #include <Servo.h>
 
 // Modbus Registers Offsets (0-9999)
@@ -14,8 +13,8 @@ const int SERVO_HREG = 100;
 // Used Pins
 const int servoPin = 9;
 
-// ModbusIP object
-ModbusIP mb;
+// ModbusEthercard object
+ModbusEthercard mb;
 // Servo object
 Servo servo;
 
@@ -24,7 +23,7 @@ void setup() {
     byte mac[] = { 0xDE, 0xAD, 0xBE, 0xEF, 0xFE, 0xED };
     // The IP address for the shield
     byte ip[] = { 192, 168, 1, 120 };
-    // Config Modbus IP
+    // Config Modbus TCP
     mb.config(mac, ip);
     // Attaches the servo pin to the servo object
     servo.attach(servoPin);

@@ -1,8 +1,7 @@
 # Syntax Coloring Map For ModbusIP
 
 # Datatypes (KEYWORD1)
-ModbusIP    	  KEYWORD1
-ModbusIP_ENC28J60 KEYWORD1
+ModbusEthercard KEYWORD1
 
 # Methods and Functions (KEYWORD2)
 config          KEYWORD2

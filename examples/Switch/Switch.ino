@@ -1,27 +1,26 @@
-/*
-  Modbus-Arduino Example - Switch (Modbus IP ENC28J60)
+/**
+  @file Switch.ino
+  Modbus-Arduino Example - Switch (Modbus TCP using Ethercard ENC28J60)
   Copyright by André Sarmento Barbosa
   http://github.com/andresarmento/modbus-arduino
 */
 
-#include <EtherCard.h>
-#include <Modbus.h>
-#include <ModbusIP_ENC28J60.h>
+#include <ModbusEthercard.h>
 
 //Modbus Registers Offsets (0-9999)
 const int SWITCH_ISTS = 100;
 //Used Pins
 const int switchPin = 3;
 
-//ModbusIP object
-ModbusIP mb;
+//ModbusEthercard object
+ModbusEthercard mb;
 
 void setup() {
     // The media access control (ethernet hardware) address for the shield
     byte mac[] = { 0xDE, 0xAD, 0xBE, 0xEF, 0xFE, 0xED };
     // The IP address for the shield
     byte ip[] = { 192, 168, 1, 120 };
-    //Config Modbus IP
+    // Config Modbus TCP
     mb.config(mac, ip);
     //Set ledPin mode
     pinMode(switchPin, INPUT);
