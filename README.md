@@ -1,5 +1,14 @@
-Modbus Library for Arduino - Over TCP/IP implementation for Ethercard (ENC28J60 controller)
-===========================================================================================
+# Modbus Library for Arduino  
+Over TCP/IP implementation for Ethercard (ENC28J60 controller)
+
+[![GitHub release (latest by date including pre-releases)](https://img.shields.io/github/v/release/epsilonrt/modbus-ethercard?include_prereleases)](https://github.com/epsilonrt/modbus-ethercard/releases) 
+[![PlatformIO Registry](https://badges.registry.platformio.org/packages/epsilonrt/library/modbus-ethercard.svg)](https://registry.platformio.org/libraries/epsilonrt/modbus-ethercard) 
+
+[![Framework](https://img.shields.io/badge/Framework-Arduino-blue)](https://www.arduino.cc/)
+[![Uno](https://github.com/epsilonrt/modbus-ethercard/actions/workflows/build_uno.yml/badge.svg)](https://github.com/epsilonrt/modbus-ethercard/actions/workflows/build_uno.yml) 
+[![Leonardo](https://github.com/epsilonrt/modbus-ethercard/actions/workflows/build_leonardo.yml/badge.svg)](https://github.com/epsilonrt/modbus-ethercard/actions/workflows/build_leonardo.yml) 
+
+---
 
 This library allows your Arduino to communicate via Modbus protocol. The Modbus is a master-slave protocol
 used in industrial automation and can be used in other areas, such as home automation.

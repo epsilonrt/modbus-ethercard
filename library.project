@@ -14,6 +14,13 @@
       <File Name="examples/TempSensor/TempSensor.ino"/>
     </VirtualDirectory>
   </VirtualDirectory>
+  <VirtualDirectory Name=".github">
+    <VirtualDirectory Name="workflows">
+      <File Name=".github/workflows/build_leonardo.yml"/>
+      <File Name=".github/workflows/build_uno.yml"/>
+    </VirtualDirectory>
+    <File Name=".github/stale.yml"/>
+  </VirtualDirectory>
   <Description/>
   <Dependencies/>
   <Settings Type="Executable">
@@ -35,7 +42,7 @@
         <LibraryPath Value="Debug"/>
       </Linker>
       <ResourceCompiler Options="" Required="no"/>
-      <General OutputFile="$(IntermediateDirectory)/$(ProjectName)" IntermediateDirectory="./Debug" Command="./$(ProjectName)" CommandArguments="" UseSeparateDebugArgs="no" DebugArguments="" WorkingDirectory="./Debug" PauseExecWhenProcTerminates="no" IsGUIProgram="no" IsEnabled="yes"/>
+      <General OutputFile="$(IntermediateDirectory)/$(ProjectName)" IntermediateDirectory="./Debug" Command="./$(ProjectName)" CommandArguments="" UseSeparateDebugArgs="no" DebugArguments="" WorkingDirectory="./Debug" PauseExecWhenProcTerminates="yes" IsGUIProgram="no" IsEnabled="yes"/>
       <BuildSystem Name="Default"/>
       <Environment EnvVarSetName="&lt;Use Workspace Settings&gt;" DbgSetName="&lt;Use Global Settings&gt;">
         <![CDATA[]]>
