@@ -1,8 +1,9 @@
-# Modbus Library for Arduino  
+# Modbus Ethercard Library for Arduino  
 Over TCP/IP implementation for Ethercard (ENC28J60 controller)
 
 [![GitHub release (latest by date including pre-releases)](https://img.shields.io/github/v/release/epsilonrt/modbus-ethercard?include_prereleases)](https://github.com/epsilonrt/modbus-ethercard/releases) 
 [![PlatformIO Registry](https://badges.registry.platformio.org/packages/epsilonrt/library/modbus-ethercard.svg)](https://registry.platformio.org/libraries/epsilonrt/modbus-ethercard) 
+[![Arduino Registry](https://www.ardu-badge.com/badge/Modbus-EtherCard.svg)](http://www.arduinolibraries.info/libraries/modbus-ether-card)
 
 [![Framework](https://img.shields.io/badge/Framework-Arduino-blue)](https://www.arduino.cc/)
 [![Uno](https://github.com/epsilonrt/modbus-ethercard/actions/workflows/build_uno.yml/badge.svg)](https://github.com/epsilonrt/modbus-ethercard/actions/workflows/build_uno.yml) 
@@ -22,18 +23,18 @@ In the current version the library allows the Arduino operate **as a slave**, su
 
 There are four classes corresponding to five headers that may be used:
 
-* [Modbus](http://github.com/epsilonrt/modbus-arduino ) - Base Library  
-* [ModbusSerial](https://github.com/epsilonrt/modbus-serial) - Modbus Serial RTU Library    
-* [ModbusEthernet](https://github.com/epsilonrt/modbus-ethernet) - Modbus TCP Library (standard Ethernet Shield)  
-* [ModbusEthercard](https://github.com/epsilonrt/modbus-ethercard) - Modbus TCP Library (for ENC28J60 chip)  
-* [ModbusEsp8266AT](https://github.com/epsilonrt/modbus-esp8266at) - Modbus IP Library (for ESP8266 chip with AT firmware)   
+* [Modbus-Arduino](http://github.com/epsilonrt/modbus-arduino ) - Base Library
+* [Modbus-Serial](https://github.com/epsilonrt/modbus-serial) - Modbus Serial RTU Library    
+* [Modbus-Ethernet](https://github.com/epsilonrt/modbus-ethernet) - Modbus TCP Library (standard Ethernet Shield)   
+* [Modbus-EtherCard](https://github.com/epsilonrt/modbus-ethercard) - Modbus TCP Library (for ENC28J60 chip)  
+* [Modbus-Esp8266AT](https://github.com/epsilonrt/modbus-esp8266at) - Modbus IP Library (for ESP8266 chip with AT firmware)   
 
 By opting for Modbus Serial or Modbus TCP you must include in your sketch the corresponding header and the base library header, eg:
 
     #include <Modbus.h>
     #include <ModbusSerial.h>
 
-## ModbusEthercard
+## Modbus-Ethercard
 
 The Arduino standard Ethernet shield is based on chip WIZnet W5100, therefore the IDE comes
 with this library installed. If you have a shield based on ENC28J60 from Microchip you must install
@@ -82,11 +83,6 @@ Wiznet shield be used in shield ENC28J60. The big problem with this approach
 arduino program memory, whereas with Ethercard + ModbusEthercard
 this value drops to 30%!
 
-Contributions
-=============
-http://github.com/epsilonrt/modbus-arduino  
-epsilonrt (at) gmail (dot) com  
-prof (at) andresarmento (dot) com  
 
 License
 =======
